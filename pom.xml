@@ -7,6 +7,9 @@
     <groupId>com.ten</groupId>
     <artifactId>ten_parent</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>ten_common</module>
+    </modules>
     <packaging>pom</packaging>
 
     <name>ten_parent</name>
