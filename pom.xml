@@ -11,6 +11,7 @@
         <module>ten_common</module>
         <module>ten_base</module>
         <module>ten_recruit</module>
+        <module>ten_qa</module>
     </modules>
     <packaging>pom</packaging>
 
