@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ten_base" />
         <module name="ten_recruit" />
+        <module name="ten_article" />
         <module name="ten_common" />
         <module name="ten_qa" />
       </profile>
@@ -15,6 +16,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ten_article" options="-parameters" />
       <module name="ten_base" options="-parameters" />
       <module name="ten_common" options="-parameters" />
       <module name="ten_qa" options="-parameters" />

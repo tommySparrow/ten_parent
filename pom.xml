@@ -12,6 +12,7 @@
         <module>ten_base</module>
         <module>ten_recruit</module>
         <module>ten_qa</module>
+        <module>ten_article</module>
     </modules>
     <packaging>pom</packaging>
 
