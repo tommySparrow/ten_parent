@@ -10,6 +10,7 @@
     <modules>
         <module>ten_common</module>
         <module>ten_base</module>
+        <module>ten_recruit</module>
     </modules>
     <packaging>pom</packaging>
 
