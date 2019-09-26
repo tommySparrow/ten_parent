@@ -42,4 +42,8 @@ public class SpitController {
         spitService.deleteById(spitId);
         return new Result(true, StatusCode.OK,"删除成功");
     }
+    @GetMapping("/example")
+    public Result findByExample(){
+        return new Result(true, StatusCode.OK,"查询成功",spitService.findByExample());
+    }
 }

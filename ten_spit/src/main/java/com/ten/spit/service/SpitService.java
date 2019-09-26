@@ -3,6 +3,8 @@ package com.ten.spit.service;
 import com.ten.spit.dao.SpitDao;
 import com.ten.spit.pojo.Spit;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import util.IdWorker;
@@ -16,11 +18,9 @@ public class SpitService {
     @Autowired
     private IdWorker idWorker;
 
-    //CRUD
     public Object findAll() {
         return spitDao.findAll();
     }
-
 
     public Object findById(String spitId) {
         return spitDao.findById(spitId);
@@ -37,5 +37,18 @@ public class SpitService {
 
     public void deleteById(String spitId) {
         spitDao.deleteById(spitId);
+    }
+
+    public Object findByExample() {
+
+        Spit spit = new Spit();
+        spit.setContent("好");
+
+        ExampleMatcher matcher = ExampleMatcher.matching()
+                .withMatcher("content", ExampleMatcher.GenericPropertyMatchers.startsWith());
+
+        Example<Spit> example = Example.of(spit,matcher);
+
+        return spitDao.findAll(example);
     }
 }

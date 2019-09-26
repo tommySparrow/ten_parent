@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ten_article" />
+        <module name="ten_base" />
+        <module name="ten_common" />
+        <module name="ten_gathering" />
         <module name="ten_qa" />
         <module name="ten_recruit" />
-        <module name="ten_common" />
-        <module name="ten_article" />
         <module name="ten_spit" />
-        <module name="ten_gathering" />
-        <module name="ten_base" />
       </profile>
     </annotationProcessing>
   </component>
